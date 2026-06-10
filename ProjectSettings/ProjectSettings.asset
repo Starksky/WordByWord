@@ -12,12 +12,12 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
+  companyName: 7Winds
   productName: WordByWord
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
-  m_ShowUnitySplashScreen: 1
+  m_ShowUnitySplashScreen: 0
   m_ShowUnitySplashLogo: 1
   m_SplashScreenOverlayOpacity: 1
   m_SplashScreenAnimation: 1
@@ -143,8 +143,9 @@ PlayerSettings:
   loadStoreDebugModeEnabled: 0
   visionOSBundleVersion: 1.0
   tvOSBundleVersion: 1.0
-  bundleVersion: 1.0
-  preloadedAssets: []
+  bundleVersion: 1.5
+  preloadedAssets:
+  - {fileID: -944628639613478452, guid: 3590b91b4603b465dbb4216d601bff33, type: 3}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   xboxOneDisableKinectGpuReservation: 1
@@ -351,6 +352,9 @@ PlayerSettings:
   - serializedVersion: 3
     m_BuildTarget: Android
     m_Formats: 03000000
+  - serializedVersion: 3
+    m_BuildTarget: WebGL
+    m_Formats: 05000000
   playModeTestRunnerEnabled: 0
   runPlayModeTestAsEditModeTest: 0
   actionOnDotNetUnhandledException: 1
@@ -596,14 +600,14 @@ PlayerSettings:
   webGLDebugSymbols: 0
   webGLEmscriptenArgs: 
   webGLModulesDirectory: 
-  webGLTemplate: APPLICATION:Default
+  webGLTemplate: PROJECT:TemplateHTML
   webGLAnalyzeBuildSize: 0
   webGLUseEmbeddedResources: 0
   webGLCompressionFormat: 0
   webGLWasmArithmeticExceptions: 0
   webGLLinkerTarget: 1
   webGLThreadsSupport: 0
-  webGLDecompressionFallback: 0
+  webGLDecompressionFallback: 1
   webGLInitialMemorySize: 32
   webGLMaximumMemorySize: 2048
   webGLMemoryGrowthMode: 2
@@ -616,7 +620,25 @@ PlayerSettings:
   webGLCloseOnQuit: 0
   webWasm2023: 0
   webEnableSubmoduleStrippingCompatibility: 0
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    Android: SAINTSFIELD_SAINTS_EDITOR_APPLY
+    EmbeddedLinux: SAINTSFIELD_SAINTS_EDITOR_APPLY
+    GameCoreScarlett: SAINTSFIELD_SAINTS_EDITOR_APPLY
+    GameCoreXboxOne: SAINTSFIELD_SAINTS_EDITOR_APPLY
+    Kepler: SAINTSFIELD_SAINTS_EDITOR_APPLY
+    LinuxHeadlessSimulation: SAINTSFIELD_SAINTS_EDITOR_APPLY
+    Nintendo Switch: SAINTSFIELD_SAINTS_EDITOR_APPLY
+    Nintendo Switch 2: SAINTSFIELD_SAINTS_EDITOR_APPLY
+    PS4: SAINTSFIELD_SAINTS_EDITOR_APPLY
+    PS5: SAINTSFIELD_SAINTS_EDITOR_APPLY
+    QNX: SAINTSFIELD_SAINTS_EDITOR_APPLY
+    Standalone: SAINTSFIELD_SAINTS_EDITOR_APPLY
+    VisionOS: SAINTSFIELD_SAINTS_EDITOR_APPLY
+    WebGL: SAINTSFIELD_SAINTS_EDITOR_APPLY
+    Windows Store Apps: SAINTSFIELD_SAINTS_EDITOR_APPLY
+    XboxOne: SAINTSFIELD_SAINTS_EDITOR_APPLY
+    iPhone: SAINTSFIELD_SAINTS_EDITOR_APPLY
+    tvOS: SAINTSFIELD_SAINTS_EDITOR_APPLY
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
@@ -624,7 +646,8 @@ PlayerSettings:
   il2cppCompilerConfiguration: {}
   il2cppCodeGeneration: {}
   il2cppStacktraceInformation: {}
-  managedStrippingLevel: {}
+  managedStrippingLevel:
+    WebGL: 3
   incrementalIl2cppBuild: {}
   suppressCommonWarnings: 1
   allowUnsafeCode: 0
